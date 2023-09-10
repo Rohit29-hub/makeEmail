@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+            height: 90vh;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .inputfield {
+            width: 500px;
+
+        }
+
+        #name {
+            width: 100%;
+            height: 40px;
+            border: 2px solid black;
+            padding: 10px;
+            cursor: text;
+            font-size: 18px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            width: 200px;
+            height: 45px;
+        }
+
+        #btn {
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            color: black;
+            border: 2px solid black;
+
+        }
+
+        #left,#right{
+            width: 200px;
+            height: 1px;
+            background: black;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .list {
+            list-style-type:decimal;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .con{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        #alert{
+            position: absolute;
+            left: 38%;
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="alert">
+
+    </p>
+    <div class="container">
+        <div class="con">
+            <span id="left"></span>
+            <h1>Email generator</h1>
+            <span id="right"></span>
+        </div>
+      
+        <div class="inputfield">
+            <input type="text" name="text" id="name" placeholder="Enter your Name">
+        </div>
+        <div class="btn">
+            <button id="btn">Generate</button>
+        </div>
+        <ul id="listen"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
